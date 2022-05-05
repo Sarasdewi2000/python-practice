@@ -102,3 +102,35 @@ for i in range (1,11):
 count=[1,2,3,4,5] #elemen list
 for number in count: #looping untuk menampilkan semua elemen pada count
     print("Ini adalah element count : ", number) #menampilkan elemen list pada count
+
+#function
+def salam():
+	print ("Hello, Selamat Pagi")
+
+salam()
+
+#parameters
+def luas_segitiga(alas, tinggi):
+	luas = (alas*tinggi)/2
+	print("Luas segitiga: %f" % luas);
+
+luas_segitiga(4,6)
+
+#return
+def luas_segitiga(alas,tinggi):
+	luas = (alas*tinggi)/2
+	return luas
+
+#modules
+import math as m
+print ("Nilai pi adalah:", m.pi)
+
+#import functions
+from math import pi
+print ("Nilai pi adalah", pi)
+
+#import all functions
+from math import *
+print ("Nilai e  adalah:", e)
+
+print ("Luas segitiga: %d" % luas_segitiga(4,6))
