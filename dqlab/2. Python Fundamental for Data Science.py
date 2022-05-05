@@ -121,6 +121,9 @@ def luas_segitiga(alas,tinggi):
 	luas = (alas*tinggi)/2
 	return luas
 
+print ("Luas segitiga: %d" % luas_segitiga(4,6))
+
+
 #modules
 import math as m
 print ("Nilai pi adalah:", m.pi)
@@ -133,4 +136,17 @@ print ("Nilai pi adalah", pi)
 from math import *
 print ("Nilai e  adalah:", e)
 
-print ("Luas segitiga: %d" % luas_segitiga(4,6))
+#readfile
+
+import csv
+
+# tentukan lokasi file, nama file, dan inisialisasi csv
+f = open('https://storage.googleapis.com/dqlab-dataset/penduduk_gender_head.csv', 'r')
+reader = csv.reader(f)
+
+# membaca baris per baris
+for row in reader:
+     print (row)
+
+# menutup file csv
+f.close()
